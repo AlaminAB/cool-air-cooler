@@ -32,8 +32,6 @@ a,
 .button,
 button {
     -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
 }
@@ -141,6 +139,8 @@ a {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
     border-radius: 100px;
     -webkit-border-radius: 100px;
@@ -152,6 +152,8 @@ a {
 
 .order_img {
     vertical-align: top;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
 }
 
@@ -173,8 +175,6 @@ a.navbar-brand img {
     width: 100%;
     max-width: 200px;
     -webkit-transition: all .45s ease-in-out;
-    -moz-transition: all .45s ease-in-out;
-    -ms-transition: all .45s ease-in-out;
     -o-transition: all .45s ease-in-out;
     transition: all .45s ease-in-out;
 }
@@ -194,6 +194,8 @@ header:after {
     content: "";
     left: 0;
     top: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.1)));
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
     background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
     z-index: 0;
     width: 100%;
@@ -228,9 +230,8 @@ li.nav-item {
 nav.navbar {
     padding-top: 15px;
     -webkit-transition: all .45s ease-in-out;
-    -moz-transition: all .45s ease-in;
-    -ms-transition: all .45s ease-in;
     -o-transition: all .45s ease-in;
+    -webkit-transition: all .45s ease-in;
     transition: all .45s ease-in;
 }
 
@@ -262,7 +263,9 @@ nav.navbar {
 .nav-wrap {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 100%;
     z-index: 99999;
 }
@@ -274,7 +277,8 @@ nav.navbar {
     background: #fff;
     z-index: 99999;
     border-color: rgba(231, 231, 231, 0);
-    box-shadow: 0px 0px 10px 0px #ccc;
+    -webkit-box-shadow: 0px 0px 10px 0px #ccc;
+            box-shadow: 0px 0px 10px 0px #ccc;
 }
 
 .nav-fixed a.nav-link {
@@ -338,7 +342,8 @@ nav.navbar {
     -moz-border-radius: 10px;
     position: relative;
     margin-bottom: 15px;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
     width: 100%;
     max-width: 300px;
     margin: 15px auto;
@@ -380,6 +385,8 @@ nav.navbar {
 }
 
 .about-video {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -400,7 +407,8 @@ nav.navbar {
     -moz-border-radius: 0px 100px 0px 50px;
     -webkit-border-radius: 0px 100px 0px 50px;
     border: 0px solid #000000;
-    box-shadow: -10px -10px #1a9cda;
+    -webkit-box-shadow: -10px -10px #1a9cda;
+            box-shadow: -10px -10px #1a9cda;
 }
 
 .right-about-video {
@@ -555,7 +563,8 @@ p.cp_save_prc .save_amn {
     right: 0;
     top: -36px;
     background: #e50101;
-    box-shadow: inset 0px -3px 15px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0px -3px 15px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0px -3px 15px 0px rgba(0, 0, 0, 0.5);
     border-radius: 5px 5px 0 0;
 }
 
@@ -721,8 +730,12 @@ p.footer_c_text {
     -moz-border-radius: 80px 0px 80px 0px;
     -webkit-border-radius: 80px 0px 80px 0px;
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     min-height: 380px;
 }
 
@@ -851,13 +864,14 @@ h6.secend_title {
 }
 
 .work_step_wrap {
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: -5px;
     margin-right: -5px;
     margin-top: 110px;
@@ -869,7 +883,8 @@ h6.secend_title {
     -webkit-border-radius: 10px;
     position: relative;
     background: #ffffff;
-    box-shadow: 0px 5px #1a9cda;
+    -webkit-box-shadow: 0px 5px #1a9cda;
+            box-shadow: 0px 5px #1a9cda;
     margin-bottom: 70px;
     margin: 0 5px;
     max-width: 285px;
@@ -930,14 +945,10 @@ a#totop {
     bottom: 100px;
     left: 10px;
     -webkit-transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in;
-    -ms-transition: all 1s ease-in;
     -o-transition: all 1s ease-in;
     transition: all 1s ease-in;
     -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
     overflow: hidden;
     padding: 0px;
@@ -946,10 +957,13 @@ a#totop {
     z-index: 100;
     background: #fff;
     border-radius: 20px 20px 10px 10px;
-    animation:moves 15s ease  infinite;
+    -webkit-animation:moves 15s ease  infinite;
+            animation:moves 15s ease  infinite;
 }
 
 .alert-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -983,6 +997,25 @@ a#totop {
 
 .alert-time {
     margin-left: 20px;
+}
+
+@-webkit-keyframes moves {
+ /*   0%{
+        bottom:0;
+    }
+    100%{
+        bottom:100px;
+    }*/
+
+      20%, 100% {
+     bottom:0;
+  }
+  0% {
+     bottom:0px;
+  }
+  10% {
+     bottom:100px;
+  }
 }
 
 @keyframes moves {

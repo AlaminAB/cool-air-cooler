@@ -529,16 +529,14 @@ var url = window.location.href;
       }
 
       let totop=document.querySelector("#totop");
-      let totops = totop.getBoundingClientRect();
-      window.onscroll=function(){
-        // console.log(window.scrollY)
+document.addEventListener("scroll",function(){
+  // console.log(window.scrollY)
         if(window.scrollY > 800){
           totop.classList.add('d-block')
         }else {
            totop.classList.remove('d-block')
         }
-      }
-
+})
 
 
 $('.navbar-toggler').click(function(){

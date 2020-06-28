@@ -269,10 +269,17 @@ color: #fff;
         line-height: 26px;
     }
     .use_step_wrp {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-end;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
         margin-top: 20px;
     }
     .work_step {

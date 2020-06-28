@@ -1,0 +1,1005 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+
+@font-face {
+    font-family: "FoXE";
+    src: url(../../fonts/FoXE-Regular.eot);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "FoXE";
+    src: url(../../fonts/FoXE-Bold.woff) format("woff2");
+    font-weight: 900;
+}
+
+/* 1. Theme default css */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color: #3e4b64;
+    font-size: 17px;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    position: relative;
+}
+
+a,
+.button,
+button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif !important;
+    color: #0a1955;
+    margin-top: 0px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none
+}
+
+p {
+    color: #3e4b64;
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #333;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.foxe_light {
+    font-family: 'FoXE', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.foxe_bold {
+    font-family: 'FoXE', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/* Default button */
+
+.btn_default {
+    padding: 13px;
+    background-color: #1a9cda;
+    color: #ffffff !important;
+    border: 1px solid #1a9cda;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: all 0.4s;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    min-width: 200px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.order_img {
+    vertical-align: top;
+    transition: all 0.4s;
+}
+
+.btn_default:hover {
+    -webkit-box-shadow: 0px 5px 10px 0px #0e6690;
+    box-shadow: 0px 5px 10px 0px #0e6690;
+}
+
+/* Custom css */
+.section_title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*header */
+a.navbar-brand img {
+    width: 100%;
+    max-width: 200px;
+    -webkit-transition: all .45s ease-in-out;
+    -moz-transition: all .45s ease-in-out;
+    -ms-transition: all .45s ease-in-out;
+    -o-transition: all .45s ease-in-out;
+    transition: all .45s ease-in-out;
+}
+
+header {
+    background: url(../img/cool-air-cooler-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #cfcfcf;
+    position: relative;
+
+}
+
+header:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    position: relative;
+    z-index: 9999;
+}
+
+a.nav-link {
+    color: #0a1955;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+a.nav-link:hover {
+    color: #1a9cda !important;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+li.nav-item {
+    margin-right: 8px;
+}
+
+nav.navbar {
+    padding-top: 15px;
+    -webkit-transition: all .45s ease-in-out;
+    -moz-transition: all .45s ease-in;
+    -ms-transition: all .45s ease-in;
+    -o-transition: all .45s ease-in;
+    transition: all .45s ease-in;
+}
+
+.banner-top {
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.banner-top span {
+    display: block;
+    color: #0a1955;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.banner-top h1 {
+    color: #1a9cda;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.nav-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 99999;
+}
+
+.nav-fixed {
+    position: fixed !important;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    z-index: 99999;
+    border-color: rgba(231, 231, 231, 0);
+    box-shadow: 0px 0px 10px 0px #ccc;
+}
+
+.nav-fixed a.nav-link {
+    color: #0a1955 !important;
+}
+
+.nav-fixed a.nav-link:hover {
+    color: #1a9cda !important;
+}
+
+.nav-fixed a.navbar-brand img {
+    width: 100%;
+    max-width: 120px;
+}
+
+.nav-fixed nav.navbar {
+    padding-top: 5px;
+}
+
+.z-index-999 {
+    z-index: 9999;
+}
+
+.header-order-box {
+    text-align: center;
+    max-width: 220px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 40px;
+    display: inline-block;
+    margin: 60px auto 0;
+}
+
+.order-box-text p {
+    color: #0a1955;
+    line-height: 1.4;
+    font-size: 18px;
+    margin: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.shadow-img {
+    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+
+/*about seciton */
+.about-section {
+    margin-top: -100px;
+    padding-top: 50px;
+}
+
+.about-box {
+    background: #164177;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    position: relative;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 300px;
+    margin: 15px auto;
+
+}
+
+.about-box-img {
+    background-image: url(../img/cool-air-cooler-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 45px;
+    padding-top: 12px;
+    position: relative;
+}
+
+.about-box-content p {
+    font-size: 20px;
+    color: #fff;
+    padding-top: 10px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.header-right-img img {
+    width: 100%;
+}
+
+.embed-responsive-16by9 {
+    padding-bottom: 56.25% !important;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.about-video {
+    display: flex;
+}
+
+.left-about-video {
+    width: 65%;
+}
+
+.left-about-video h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.left-about-video {
+    padding: 50px;
+    padding-right: 22%;
+    background: #f4feff;
+    border-radius: 0px 100px 0px 50px;
+    -moz-border-radius: 0px 100px 0px 50px;
+    -webkit-border-radius: 0px 100px 0px 50px;
+    border: 0px solid #000000;
+    box-shadow: -10px -10px #1a9cda;
+}
+
+.right-about-video {
+    width: 55%;
+    margin-left: -20%;
+    z-index: 9999;
+    margin-top: 5%;
+    padding-bottom: 3%;
+}
+
+.about-video-section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.choose_pack_wrap .section_title {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+.choose_pack_wrap {
+    padding: 95px 0 90px;
+    background: url(../img/cool-air-cooler-19.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.cp_product {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+    max-width: 360px;
+}
+
+.cp_prod_title {
+    background-image: url(../img/cool-air-cooler-17.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 160px;
+    border-radius: 10px 10px 0 0;
+    z-index: 1;
+    position: relative;
+}
+
+.cp_prod_title h4 {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 18px;
+    margin: 0;
+    color: #fff;
+}
+
+.cp_prod_img img {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+h4.cp_prod_price {
+    color: #4b576e;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+h4.cp_prod_price .pd_prc {
+    font-size: 36px;
+    color: #ec0000;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+h4.cp_prod_price .pd_prc_sign {
+    font-size: 20px;
+    color: #ec0000;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.cp_prod_img img {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+h4.cp_prod_price {
+    color: #4b576e;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+h4.cp_prod_price .pd_prc {
+    font-size: 36px;
+    color: #ec0000;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+h4.cp_prod_price .pd_prc_sign {
+    font-size: 20px;
+    color: #ec0000;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+p.cp_save_prc {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #4b576e;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+p.cp_save_prc .save_amn {
+    color: #ec0000;
+}
+
+.cp_pd_ship p {
+    color: #3e4b64;
+    padding: 25px 0 30px;
+    margin: 0;
+}
+
+.color_yellow {
+    color: #fff600;
+}
+
+.cp_best_sell {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    padding: 10px 15px;
+    font-weight: bold;
+    line-height: 16px;
+    font-size: 12px;
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -36px;
+    background: #e50101;
+    box-shadow: inset 0px -3px 15px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 0 0;
+}
+
+.cp_best_sell p {
+    font-size: 14px;
+    color: #fff600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.cp_prod_img {
+    padding: 0 15px;
+}
+
+
+/* footer */
+.footer_menu {
+    border-bottom: 1px solid #233453;
+}
+
+footer {
+    background: #0a1d40;
+    padding: 0px 0 35px 0;
+}
+
+.footer_menu ul li {
+    display: inline-block;
+}
+
+.footer_menu ul li a {
+    color: #ffffff;
+    padding: 20px 15px;
+    display: block;
+    line-height: 20px;
+}
+
+.footer_menu ul li a:hover {
+    color: #337ab7;
+}
+
+.footer_menu ul {
+    text-align: center;
+}
+
+.footer_social_link a {
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px 0px 5px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+}
+
+.footer_bottom {
+    padding-top: 15px;
+}
+
+p.footer_c_text {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+.footer_logo img {
+    max-width: 100%;
+}
+
+/* matari area */
+.matari_wrap {
+    padding: 85px 0 70px;
+    background: url(../img/cool-air-cooler-14.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.mat_item {
+    background: #174074;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 270px;
+
+}
+
+.mat_item h4 {
+    color: #fff;
+}
+
+.mat_img img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.mat_shap {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mat_shap img {
+    width: 100%;
+}
+
+.mat_img {
+    position: relative;
+    z-index: 1;
+    padding: 0 25px;
+}
+
+.triangle {
+    background: url(../img/cool-air-cooler-9.png);
+    height: 159px;
+    width: 159px;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    padding-top: 60px;
+    margin-left: auto;
+    position: relative;
+    right: -30px;
+    top: 10px;
+}
+
+/* testimonial seciton */
+.testimonial_wrap {
+    padding: 95px 0 100px;
+    background: url(../img/cool-air-cooler-8.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.client_bg_1 {
+    background: rgba(16, 147, 209, 0.9);
+}
+
+.client_bg_2 {
+    background: rgba(28, 67, 115, 0.9);
+}
+
+.single_testi {
+    padding: 50px;
+    border-radius: 80px 0px 80px 0px;
+    -moz-border-radius: 80px 0px 80px 0px;
+    -webkit-border-radius: 80px 0px 80px 0px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    min-height: 380px;
+}
+
+
+.testi_img img {
+    max-width: 110px;
+    display: inline-block;
+}
+
+.testi_img {
+    margin-right: 30px;
+}
+
+.testi_cont p,
+.testi_cont h5 {
+    color: #fff;
+}
+
+.testi_cont h5 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+
+p.testi_text {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+p.testi_auth {
+    margin-bottom: 0;
+}
+
+.use_wrap .section_title,
+.work_wrap .section_title {
+    margin-bottom: 30px;
+}
+
+.user_cont {
+    padding-top: 240px;
+    position: relative;
+}
+
+.use_step_1 {
+    top: 50%;
+    left: 0;
+}
+
+.use_step_2 {
+    top: 20%;
+    left: 10%;
+}
+
+.use_step_3 {
+    top: 5%;
+    left: 40%;
+}
+
+.use_step_4 {
+    top: 20%;
+    right: 10%;
+}
+
+.use_step_5 {
+    top: 50%;
+    right: 0;
+}
+
+.use_step {
+    position: absolute;
+    max-width: 250px;
+    text-align: center;
+}
+
+.use_step h4 {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.use_step_img {
+    margin-bottom: 15px;
+}
+
+.use_step_img img {
+    display: inline-block;
+}
+
+.use_img {
+    text-align: center;
+}
+
+.use_img img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+section.use_wrap {
+    padding: 55px 0 120px;
+}
+
+.use_btn_wrap {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p.sub_title {
+    text-align: center;
+}
+
+.work_wrap {
+    padding: 95px 0 55px;
+    background: url(../img/cool-air-cooler-26.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h6.secend_title {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.work_step_wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: 110px;
+}
+
+.work_step {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 5px #1a9cda;
+    margin-bottom: 70px;
+    margin: 0 5px;
+    max-width: 285px;
+}
+
+.top_num {
+    position: absolute;
+    top: -51px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.top_num img {
+    max-width: 100%;
+}
+
+.step_inner img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.step_text {
+    min-height: 100px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.step_text h4 {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 10px;
+}
+
+a#totop {
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 999;
+    background: #fff;
+    height: 36px;
+    width: 36px;
+    padding: 4px;
+    text-align: center;
+    line-height: 12px;
+    font-size: 2em;
+    color: #000;
+    opacity: 0.6;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border: 1px solid #0a1955;
+    padding-top: 0px;
+    display: none;
+}
+
+.alert-box {
+    position: fixed;
+    bottom: 100px;
+    left: 10px;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    overflow: hidden;
+    padding: 0px;
+    width: 100%;
+    max-width: 400px;
+    z-index: 100;
+    background: #fff;
+    border-radius: 20px 20px 10px 10px;
+    animation:moves 15s ease  infinite;
+}
+
+.alert-bottom {
+    display: flex;
+}
+
+.alert-bottom img {
+    padding: 5px;
+    max-width: 64px;
+    margin-left: 16px;
+}
+
+.alert-title {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 5px 15px;
+    background: #ebebeb;
+    border-bottom: 1px solid #edd4d4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.alert-title p {
+    margin: 0;
+    color: #ec0000;
+}
+
+.alert-time p {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 5px;
+    color: #ec0000;
+}
+
+.alert-time {
+    margin-left: 20px;
+}
+
+@keyframes moves {
+ /*   0%{
+        bottom:0;
+    }
+    100%{
+        bottom:100px;
+    }*/
+
+      20%, 100% {
+     bottom:0;
+  }
+  0% {
+     bottom:0px;
+  }
+  10% {
+     bottom:100px;
+  }
+}

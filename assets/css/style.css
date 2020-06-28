@@ -954,7 +954,7 @@ a#totop {
     padding: 0px;
     width: 100%;
     max-width: 400px;
-    z-index: 100;
+    z-index: 9999;
     background: #fff;
     border-radius: 20px 20px 10px 10px;
     -webkit-animation:moves 15s ease  infinite;
